@@ -25,7 +25,7 @@ open class DBAlertController: UIAlertController {
     - parameter flag:       Pass true to animate the presentation; otherwise, pass false. The presentation is animated by default.
     - parameter completion: The closure to execute after the presentation finishes.
     */
-    open func show(animated flag: Bool = true, completion: (() -> Void)? = nil) {
+    @objc open func show(animated flag: Bool = true, completion: (() -> Void)? = nil) {
         if let rootViewController = alertWindow.rootViewController {
             alertWindow.makeKeyAndVisible()
             
